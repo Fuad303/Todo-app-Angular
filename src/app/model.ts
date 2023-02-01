@@ -5,9 +5,10 @@ export class Model{
     constructor(){
         this.user = "Fuad";
         this.items = [
-            new todoItem("Kahvalti", true),
+            new todoItem("Kahvalti", false),
             new todoItem("Spor", false),
-            new todoItem("Fature", true)
+            new todoItem("Fatura", false),
+            new todoItem("Düğün", true)
         ]
     }
 }
@@ -15,7 +16,7 @@ export class todoItem{
     description;
     action;
 
-    constructor(description: string, action: boolean){
+    constructor(description: any, action: any){
         this.description = description;
         this.action = action;
     }
